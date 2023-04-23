@@ -19,7 +19,20 @@
 <body>
 
 {% include 'partials/nav.html' %}
-{% block container %}{% endblock %}
+{% include 'partials/message.html' %}
 
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            {% block content %}{% endblock %}
+        </div>
+        <div class="col-4">
+            {% block aside %}
+                <h2>Z base pochodzę</h2>
+            {% endblock %}
+        </div>
+    </div>
+</div>
 
 </body>
+</html>
