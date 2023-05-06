@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'debug_toolbar',
+    'courses.apps.CoursesConfig',
 
 ]
 
@@ -143,3 +144,6 @@ AUTH_USER_MODEL = 'users.Account'
 LOGIN_URL = 'users/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
